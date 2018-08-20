@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS vehiclee;
+GRANT ALL  PRIVILEGES ON vehiclee TO root;
+
+USE vehiclee;
+
+CREATE TABLE IF NOT EXISTS user(
+user_name VARCHAR(30) NOT NULL PRIMARY KEY,
+email_id VARCHAR (100),
+phone_num VARCHAR (10)
+);
+
+CREATE TABLE IF NOT EXISTS vehicle(
+vehicle_type VARCHAR(30),
+model VARCHAR(30) PRIMARY KEY,
+capacity VARCHAR(30)
+);
