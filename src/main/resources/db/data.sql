@@ -1,6 +1,2 @@
-INSERT IGNORE INTO user VALUES (1, 'James', 'Carter');
-INSERT IGNORE INTO user VALUES (2, 'Helen', 'Leary');
-INSERT IGNORE INTO user VALUES (3, 'Linda', 'Douglas');
-INSERT IGNORE INTO user VALUES (4, 'Rafael', 'Ortega');
-INSERT IGNORE INTO user VALUES (5, 'Henry', 'Stevens');
-INSERT IGNORE INTO user VALUES (6, 'Sharon', 'Jenkins');
+INSERT IGNORE INTO user VALUES ('Divya','jyoti.divya0@gmail.com','9632454433');
+INSERT IGNORE INTO user VALUES ('Dev', 'divy.dev.jyoti@gmail.com', '9632454433');

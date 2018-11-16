@@ -2,8 +2,19 @@ package com.example.vehicle.vehiclee.model;
 
 public class User {
     private String userName;
+    private String emailID;
+    private String phoneNum;
+    private String password;
 
-    public String getEmailID() {
+    public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getEmailID() {
         return emailID;
     }
 
@@ -19,8 +30,7 @@ public class User {
         this.phoneNum = phoneNum;
     }
 
-    private String emailID;
-    private String phoneNum;
+
 
     public String getUserName() {
         return userName;

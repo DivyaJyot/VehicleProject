@@ -17,6 +17,7 @@ import java.util.Locale;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
@@ -53,9 +54,9 @@ public class Vehiclecontroller {
         System.out.println("Saving vehicle info : "+ people_capacity);
 
         try {
-                Class.forName("com.mysql.jdbc.Driver");
-                String dburl="jdbc:mysql://localhost:3306/vehiclee?verifyServerCertificate=false&useSSL=true";
-                Connection con=DriverManager.getConnection(dburl,"root","abc@123");
+                Class.forName("com.mysql.jdbc.Driver").newInstance();
+                String dburl="jdbc:mysql://127.0.0.1:3306/Vehiclee?verifyServerCertificate=false&useSSL=true&autoReconnect=true";
+                Connection con=DriverManager.getConnection(dburl +"&user=root"+"&password=abc@123");
                 String query ="INSERT INTO vehicle(vehicle_type,model,capacity)" +" values (?,?,?)";
                 PreparedStatement preparedStmt = con.prepareStatement(query);
                 preparedStmt.setString (1, Vehicle_Type);

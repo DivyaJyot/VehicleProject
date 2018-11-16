@@ -1,5 +1,6 @@
 CREATE DATABASE IF NOT EXISTS vehiclee;
 GRANT ALL  PRIVILEGES ON vehiclee TO root;
+FLUSH PRIVILEGES;
 
 USE vehiclee;
 
@@ -13,4 +14,9 @@ CREATE TABLE IF NOT EXISTS vehicle(
 vehicle_type VARCHAR(30),
 model VARCHAR(30) PRIMARY KEY,
 capacity VARCHAR(30)
+);
+
+CREATE TABLE IF NOT EXISTS Credentials(
+user_name VARCHAR(30) NOT NULL PRIMARY KEY,
+password VARCHAR(20) NOT NULL
 );

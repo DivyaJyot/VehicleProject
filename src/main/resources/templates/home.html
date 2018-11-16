@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<meta charset="UTF-8">
+<title>Title</title>
+<style>
+header {
+	background-color: #666;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+}
+</style>
 </head>
 <body bgcolor="#FFE4C4">
-<h1>Vehiclee</h1>
-<p>Vehicle owner login!</p>
-<P>The time on the server is ${serverTime}.</p>
+	<h1>Vehiclee</h1>
+	<header>
+		<h2>Give or Get</h2>
+	</header>
+	<p>Vehicle owner login!</p>
+	<P>The time on the server is "${serverTime}".</p>
+	<ul>
+		<li><a href="#">Register you Vehicle</a></li>
+		<li><a href="#">Book a Vehicle</a></li>
+		<li><a href="#">login</a></li>
+		<li><a href="#">sign up</a></li>
+	</ul>
 
-<form action="welcome" method="post">
-    <table align="center">
-        <tr>
-            <td>
-                <label path="username">Username: </label>
-            </td>
-            <td>
-                <input type="text" name="userName"><br>
-            </td>
-        </tr>
+	<form action="welcome" method="post">
+		<table align="center">
+			<tr>
+				<td><label path="username">Username: </label></td>
+				<td><input type="text" name="userName"><br></td>
+			</tr>
 
-        <tr>
-            <td>
-                <label path="password">Password:</label>
-            </td>
-            <td>
-
-                <input type="text" name="password"><br>
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td align="left">
-
-                <input type="submit" value="Login">
-            </td>
-        </tr>
-        <tr></tr>
-        <tr>
-            <td></td>
-            <td><a href="home.html">Home</a>
-            </td>
-        </tr>
-    </table>
+			<tr>
+				<td><label path="password">Password:</label></td>
+				<td><input type="text" name="password"><br></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td align="left"><input type="submit" value="Login"></td>
+			</tr>
+			<tr></tr>
+		</table>
+	</form>
+	<form action="signup" method="post">
+    <br>
+    <input type="submit" value="Sign up">
 </form>
 </body>
 </html>
