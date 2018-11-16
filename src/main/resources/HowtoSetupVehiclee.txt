@@ -1,0 +1,11 @@
+How to get vehiclee running:
+1. Install JDK, setup system variables JAVA_HOME and add bin to system path
+2. Install maven, setup system variables MAVEN_HOME and add %MAVEN_HOME%/bin to system path.
+3. add settings.xml from github inside .m2 in user directory.
+4. Import project as existing maven project in eclipse.
+5. Run File VehicleeApplication.Java
+6. Launch  http://localhost:8080/ in browser
+7. MySql setup:
+Install Msql (in setup select developer default)
+Run script schema.sql
+Run script data.sql
